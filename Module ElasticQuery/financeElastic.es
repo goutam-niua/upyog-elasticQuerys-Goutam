@@ -1,28 +1,145 @@
-PUT finance-national-dashboard
+PUT /finance-national-dashboard
 {
   "mappings": {
     "properties": {
-      "date": { "type": "date", "format": "dd-MM-yyyy||epoch_millis" },
-      "module": { "type": "keyword" },
-      "ward": { "type": "keyword" },
-      "ulb": { "type": "keyword" },
-      "region": { "type": "keyword" },
-      "state": { "type": "keyword" },
-      "createdBy": { "type": "keyword" },
-      "createdTime": { "type": "long" },
-      "lastModifiedBy": { "type": "keyword" },
-      "lastModifiedTime": { "type": "long" },
-      "timestamp": { "type": "date" },
-      "totalRevenueCollected": { "type": "long" },
-      "totalAuditsCompleted": { "type": "integer" },
-      "totalAudits": { "type": "integer" },
-      "totalOutstandingDebt": { "type": "long" },
-      "totalCurrentExpenditure": { "type": "long" },
-      "totalInterestExpenses": { "type": "long" },
-      "totalBills": { "type": "integer" },
-      "pendingBills": { "type": "integer" },
-      "totalFundBalance": { "type": "long" },
-      "totalFundRequirement": { "type": "long" }
+      "accountHead": {
+        "type": "keyword"
+      },
+      "amount": {
+        "type": "long"
+      },
+      "approvedBy": {
+        "type": "keyword"
+      },
+      "balance": {
+        "type": "long"
+      },
+      "bankAccount": {
+        "type": "keyword"
+      },
+      "createdBy": {
+        "type": "keyword"
+      },
+      "createdTime": {
+        "type": "long"
+      },
+      "credit": {
+        "type": "long"
+      },
+      "date": {
+        "type": "date",
+        "format": "dd-MM-yyyy||epoch_millis"
+      },
+      "debit": {
+        "type": "long"
+      },
+      "department": {
+        "type": "keyword"
+      },
+      "description": {
+        "type": "text"
+      },
+      "fund": {
+        "type": "keyword"
+      },
+      "fundSource": {
+        "type": "keyword"
+      },
+      "instrumentNumber": {
+        "type": "keyword"
+      },
+      "lastModifiedBy": {
+        "type": "keyword"
+      },
+      "lastModifiedTime": {
+        "type": "long"
+      },
+      "module": {
+        "type": "keyword"
+      },
+      "payeePayer": {
+        "type": "keyword"
+      },
+      "paymentMode": {
+        "type": "keyword"
+      },
+      "pendingBills": {
+        "type": "integer"
+      },
+      "postingDate": {
+        "type": "date",
+        "format": "dd-MM-yyyy||epoch_millis"
+      },
+      "receiptNumber": {
+        "type": "keyword"
+      },
+      "referenceNumber": {
+        "type": "keyword"
+      },
+      "region": {
+        "type": "keyword"
+      },
+      "schemeProject": {
+        "type": "keyword"
+      },
+      "state": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "subScheme": {
+        "type": "keyword"
+      },
+      "timestamp": {
+        "type": "date"
+      },
+      "totalAudits": {
+        "type": "integer"
+      },
+      "totalAuditsCompleted": {
+        "type": "integer"
+      },
+      "totalBills": {
+        "type": "integer"
+      },
+      "totalCurrentExpenditure": {
+        "type": "long"
+      },
+      "totalFundBalance": {
+        "type": "long"
+      },
+      "totalFundRequirement": {
+        "type": "long"
+      },
+      "totalInterestExpenses": {
+        "type": "long"
+      },
+      "totalOutstandingDebt": {
+        "type": "long"
+      },
+      "totalRevenueCollected": {
+        "type": "long"
+      },
+      "transactionDate": {
+        "type": "date",
+        "format": "dd-MM-yyyy||epoch_millis"
+      },
+      "transactionTime": {
+        "type": "keyword"
+      },
+      "ulb": {
+        "type": "keyword"
+      },
+      "voucherId": {
+        "type": "keyword"
+      },
+      "voucherType": {
+        "type": "keyword"
+      },
+      "ward": {
+        "type": "keyword"
+      }
     }
   }
 }
